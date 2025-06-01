@@ -6,10 +6,11 @@ A full-stack Notes App using React (Vite) for the frontend and Express.js for th
 
 ```bash
 npm install
-cd frontend
+cd ./frontend
 npm install
 cd ../backend
 npm install
+cd ..
 ```
 ## Start the App - both frontend & backend
 
