@@ -10,6 +10,7 @@ function AddNote() {
 
     const id = Date.now();
 
+    // making request to add new note
     fetch("http://127.0.0.1:5500/notes", {
       method: "POST",
       headers: {
@@ -20,6 +21,7 @@ function AddNote() {
       .then((res) => res.json())
       .then((result) => {
         if (result == "success") {
+          // updating frontend data after sucessfully adding data to server
           setData([{ text: input, id: id }, ...data]);
           setInput("");
         } else alert("Error To Add Note");
