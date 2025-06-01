@@ -3,10 +3,7 @@ const cors = require("cors");
 
 const app = express();
 
-let storage = [
-    { id: 1, text: "string" },
-    { id: 2, text: "string2" }
-];
+let storage = [];
 
 app.use(cors({
     origin: "http://localhost:5173"

@@ -26,17 +26,19 @@ function AddNote() {
       });
   }
   return (
-    <header className="py-2 px-4">
-      <h1 className="text-2xl">Notes App</h1>
-      <form onSubmit={(e) => submitForm(e)}>
+    <header className="pb-2 pt-4 px-4 max-w-[700px]  mx-auto">
+      <h1 className="text-2xl font-bold font-serif ">Notes App</h1>
+      <form onSubmit={(e) => submitForm(e)} className="flex gap-2 my-2 h-10">
         <input
           value={input}
           onChange={(e) => setInput(e.target.value)}
           type="text"
           placeholder="enter text"
-          className="border px-2 my-2 mr-4"
+          className="border px-2 flex-1 rounded-xl"
         />
-        <button className="border px-2">add</button>
+        <button className="bg-neutral-800 text-white font-semibold px-4 rounded-xl hover:cursor-pointer">
+          add
+        </button>
       </form>
     </header>
   );

@@ -18,9 +18,9 @@ function Note({ text, id }) {
       });
   }
   return (
-    <div className="py-1">
+    <div className="py-2 bg-neutral-100 rounded-xl border border-neutral-300 flex items-center justify-between px-4">
       {text}
-      <button onClick={deleteNote} className="border ml-4 px-2">
+      <button onClick={deleteNote} className=" bg-rose-300 ml-4 px-2 rounded-xl h-8 hover:cursor-pointer hover:bg-rose-400">
         delete
       </button>
     </div>
